@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Website</title>
+  <!-- Include Dialogflow Messenger SDK -->
+  <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js"></script>
+</head>
+<body>
+  <!-- Button to open the chatbot in demo mode -->
+  <button onclick="dfMessenger.open()">Open Chatbot</button>
+
+  <!-- Initialize the Dialogflow Messenger in demo mode -->
+  <script>
+    window.dfMessenger = {
+      demo: true,
+      apiUrl: "https://YOUR_PROJECT_ID.df.chat",
+    };
+  </script>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
